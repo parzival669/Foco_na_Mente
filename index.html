@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Torna a página responsiva em dispositivos móveis-->
+  <title>Foco na Mente</title>
+  <!-- Importa a fonte Roboto do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link para o arquivo de estilo externo (CSS) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho de navegação -->
+  <nav>
+    <div class="logo">Foco na Mente</div> <!-- Nome da logo no canto esquerdo -->
+    <div class="menu"> <!-- Links de navegação no canto direito -->
+      <a href="#">Vídeos</a>
+      <a href="#">Artigos</a>
+      <a href="#">Contato</a>
+      <a href="#">Sobre nós</a>
+    </div>
+  </nav>
+
+  <!-- Seção principal -->
+  <section class="hero">
+    <h1>FOCO<br>NA MENTE</h1>
+    <p>PROJETO DE EXTENSÃO</p>
+    
+    <!-- Formulário para contato -->
+    <div class="form-container">
+      <input type="text" placeholder="Fale conosco">
+      <button>ENVIAR</button>
+    </div>
+  </section>
+
+  <!-- Segunda seção com texto e blocos -->
+  <section class="section-main">
+    <div class="text-block"> <!-- Bloco com título e texto -->
+      <h2><span class="highlight">Você</span> é mais forte do que <span class="highlight">pensa</span>.</h2>
+      <p>A vida é uma jornada cheia de altos e baixos, onde cada passo nos ensina algo novo. Mesmo nas dificuldades, há sempre uma lição a ser aprendida e um motivo para continuar. O importante é não perder a esperança e acreditar que dias melhores virão. Pequenas vitórias diárias acumulam-se em grandes conquistas ao longo do tempo da persistência e da fé em si mesma.</p>
+    </div>
+    
+    <div class="icons-block"> <!-- Ícones e informações dos projetos -->
+      <div>informacao dos dados projetos</div>
+      <div>informacao dos dados projetos</div>
+      <div>informacao dos dados projetos</div>
+    </div>
+  </section>
+
+  <!-- Seção de vídeos com carrossel -->
+  <section class="videos-section">
+    <h2>NOSSOS VIDEOS</h2>
+
+    <!-- Carrossel de slides -->
+    <div class="carousel-container">
+      <div class="carousel-slides" id="carouselSlides">
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide"></div>
+      </div>
+      <!-- Botões de navegação -->
+      <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <!-- Navegação com bolinhas -->
+    <div class="carousel-nav" id="carouselDots"></div>
+
+    <p class="footer-text">
+      Confira nossos vídeos para saber <span>informações</span><br>
+      Ou entre em contato.
+    </p>
+  </section>
+
+  <!-- Script JS embutido para funcionamento do carrossel -->
+  <script>
+    // Seleciona os elementos do carrossel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const carouselSlides = document.getElementById('carouselSlides');
+    const carouselDots = document.getElementById('carouselDots');
+    let currentSlide = 0;
+
+    // Atualiza o carrossel para mostrar o slide atual
+    function updateCarousel() {
+      carouselSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
+      document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
+    }
+
+    // Cria bolinhas (dots) do carrossel
+    function createDots() {
+      slides.forEach((_, index) => {
+        const dot = document.createElement('span');
+        dot.classList.add('carousel-dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          updateCarousel();
+        });
+        carouselDots.appendChild(dot);
+      });
+    }
+
+    // Voltar slide
+    function prevSlide() {
+      currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+      updateCarousel();
+    }
+
+    // Próximo slide
+    function nextSlide() {
+      currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+      updateCarousel();
+    }
+
+    // Inicialização
+    createDots();
+    updateCarousel();
+  </script>
+</body>
+</html>
