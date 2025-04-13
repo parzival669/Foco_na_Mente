@@ -1,0 +1,49 @@
+footer{
+    background-color: #222;
+    font-size: 1.0rem;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 2rem 0 ;
+  }
+  
+  .footer__topicos{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer__border{
+    border-right: 2px solid #fff;
+    padding-right: 20rem;
+  }
+  
+  .footer__title{
+    color: #fdb913;
+    font-weight: 800;
+    padding-bottom: 2rem;
+  }
+  
+  .footer__branco{
+    color: #fff;
+  }
+  
+  .footer__link{
+    display: flex;
+    text-decoration: none;
+    color: #fff ;
+    padding-bottom: 1rem;
+    
+  }
+  
+  .footer__icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  .footer__copyright{
+    text-align: center;
+    padding-top: 2rem;
+  }
