@@ -77,5 +77,51 @@
         </div>
         <p class="footer__copyright">2025 Universidade de Taubaté</p>
       </footer>
+
+
+      <script>
+        const TOKEN = '7856237367:AAH5vq_MpIAEwDwuYn1XjWumByo-PARYKyg';
+        const CHAT_ID = '-4747072946';
+      
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+      
+          const name = this.name.value;
+          const email = this.email.value;
+          const phone = this.phone.value;
+          const subject = this.subject.value;
+          const message = this.message.value;
+      
+          const text = `
+      🚨 *Nova mensagem do site!* 🚨
+      👤 *Nome:* ${name}
+      📧 *Email:* ${email}
+      📱 *Telefone:* ${phone}
+      📌 *Assunto:* ${subject}
+      📝 *Mensagem:* ${message}
+      `;
+      
+          fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              chat_id: CHAT_ID,
+              text: text,
+              parse_mode: "Markdown"
+            })
+          })
+          .then(response => response.json())
+          .then(data => {
+            alert("Mensagem enviada com sucesso!");
+            document.getElementById("contact-form").reset();
+          })
+          .catch(error => {
+            alert("Erro ao enviar a mensagem 😥");
+            console.error("Erro:", error);
+          });
+        });
+      </script>
 </body>
 </html>
