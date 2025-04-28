@@ -248,7 +248,22 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-indicator.active {
   background: var(--color-primary);
 }
+/* Estilos para o carrossel de vídeos */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+}
 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+}
 /* Estigma Section */
 .article-highlight {
   background: var(--color-white);
