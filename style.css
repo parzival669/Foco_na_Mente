@@ -157,10 +157,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 1rem;
   line-height: 1.1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-title span {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: italic; 
 }
 
 .hero-subtitle {
@@ -188,6 +195,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature-card:hover {
   transform: translateY(-5px);
+}
+
+#videos{
+  background-color: #ffeec3;
+}
+.section-title{
+  font-size: 60px;
+
 }
 
 /* Carrossel */
