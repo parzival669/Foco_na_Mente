@@ -149,6 +149,132 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   cursor: pointer;
 }
+/* Menu Hamburguer Moderno */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* Estado ativo do menu */
+.menu-toggle[aria-expanded="true"] .hamburger {
+  background: transparent;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 150px;
+    height: 100vh;
+    background: var(--color-dark);
+    flex-direction: column;
+    padding: 5rem 2rem;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    margin: 0;
+  }
+  
+  .nav-menu.active {
+    transform: translateX(170%);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  .nav-link {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--color-primary);
+  }
+  
+  /* Overlay quando menu está aberto */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .logo{
+    font-size: 1.6rem;
+    
+  }
+}
+
+
+
+
+
+
 
 .hero {
   background-color: var(--color-primary);

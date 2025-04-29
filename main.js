@@ -1,16 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Menu mobile
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+// Menu mobile melhorado
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const navOverlay = document.createElement('div');
+navOverlay.className = 'nav-overlay';
+document.body.appendChild(navOverlay);
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', function() {
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !isExpanded);
+    navMenu.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    document.body.style.overflow = isExpanded ? '' : 'hidden';
+  });
   
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', function() {
-      const isExpanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !isExpanded);
-      navMenu.classList.toggle('active');
-      this.querySelector('.hamburger').textContent = isExpanded ? '☰' : '✕';
+  // Fechar menu ao clicar no overlay
+  navOverlay.addEventListener('click', function() {
+    menuToggle.setAttribute('aria-expanded', 'false');
+    navMenu.classList.remove('active');
+    this.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  
+  // Fechar menu ao clicar em um link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navMenu.classList.remove('active');
+        navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
     });
-  }
+  });
+}
 
   // Carrossel
   const carouselInner = document.getElementById('carousel-inner');
@@ -262,4 +286,3 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   setupContactForm();
-});
