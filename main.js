@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: "Foco na Mente: Promoção da Saúde Mental na UNITAU",
       description: "Conheça o Projeto Foco na Mente, que promove saúde mental para acadêmicos da UNITAU e clientes psiquiátricos do HMUT, com ações de acolhimento, conscientização sobre transtornos mentais e terapias integrativas, adaptadas para o formato online durante a pandemia.",
       logo: "assets/Logo.svg",
-      pdf: "assets/articles/Foco_na_mente.pdf",
+      pdf: "assets/articles/Foco na mente.pdf",
       author: {
         name: "Oscar César Pires e outros",
         bio: "Doutor em Ciências e professor da UNITAU, lidera o Projeto Foco na Mente com uma equipe interdisciplinar de médicos, psicólogos e estudantes, focada em saúde mental e extensão universitária.",
