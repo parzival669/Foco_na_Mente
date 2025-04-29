@@ -5,30 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Projeto Foco na Mente - Promovendo saúde mental e bem-estar">
   <title>Foco na Mente - Saúde Mental e Bem-Estar</title>
-  
-  <!-- Preload de fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-  
-  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <!-- Navegação -->
   <header class="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo"><img src="assets/Logo.svg">Foco na Mente</a>
-      
+      <a href="#" class="logo"><img src="assets/Logo.svg" alt="Logo Foco na Mente">Foco na Mente</a>
       <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
-        <span class="hamburger"></span>
+        <span class="hamburger">☰</span>
       </button>
-      
       <nav>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#videos" class="nav-link">Vídeos</a></li>
@@ -52,23 +43,20 @@
   <section class="section">
     <div class="container">
       <h2 class="section-title"><span class="highlight">Você</span> é mais forte do que <span class="highlight">pensa</span>.</h2>
-      
       <div class="features">
         <div class="feature-card">
           <img src="assets/pensando.png" alt="Ícone de pensamento" width="50">
           <h3>Informação dos Projetos</h3>
           <p>Conteúdo detalhado sobre nossos projetos de saúde mental.</p>
         </div>
-        
         <div class="feature-card">
           <img src="assets/autismo.png" alt="Ícone de autismo" width="50">
           <h3>Suporte Especializado</h3>
           <p>Recursos e informações para pessoas com autismo.</p>
         </div>
-        
         <div class="feature-card">
           <img src="assets/bipolar.png" alt="Ícone de transtorno bipolar" width="50">
-          <h3>Orientacão Profissional</h3>
+          <h3>Orientação Profissional</h3>
           <p>Informações sobre transtorno bipolar e tratamentos.</p>
         </div>
       </div>
@@ -76,150 +64,89 @@
   </section>
 
   <!-- Seção de Vídeos -->
-<section id="videos" class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Nossos Vídeos</h2>
-    
-    <div class="carousel">
-      <div class="carousel-inner" id="carousel-inner">
-        <!-- Vídeo 1 -->
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/n9qz08n_LFo?si=mgVK1WZxU5GPekqh" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-        
-        <!-- Vídeo 2 -->
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/bXSsbfJOy5Q?si=ebZSh-HMx4TI4b7J" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/8Iehh7LcBuI?si=IqHTVts6OiSEgYpz" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/kdrdXtb_b0M?si=4pwyGTQ9hRqF-yZ_" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/Rrjr4OGqT1c?si=rTCdSkcXGJ8f8EKg" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy"></iframe>
-          </div>
-        </div>
-
-
-        
-        <!-- Adicione mais vídeos conforme necessário -->
-      </div>
-      
-      <div class="carousel-controls">
-        <button class="carousel-button prev" aria-label="Vídeo anterior">&#10094;</button>
-        <button class="carousel-button next" aria-label="Próximo vídeo">&#10095;</button>
-      </div>
-      
-      <div class="carousel-indicators" id="carousel-indicators"></div>
-    </div>
-  </div>
-</section>
-
-  <!-- Artigo em Destaque -->
-  <section id="artigos" class="article-highlight">
+  <section id="videos" class="section bg-light">
     <div class="container">
-      <h2 class="section-title">Artigo em Destaque</h2>
-      
-      <div class="article-content">
-        <div class="article-text">
-          <img src="assets/Logo.svg" alt="Logo Foco na Mente" width="100">
-          <h1>Estigma dirigido a pessoas com transtornos mentais:<br>
-            <strong>uma proposta para a formação médica do século XXI</strong>
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu ex, ultrices iaculis arcu at, venenatis consequat ante. Nulla vestibulum fringilla tellus consectetur hendrerit. Donec elementum, massa eu mollis efficitur, felis nunc condimentum dui, sit amet dignissim eros eros in orci. Vestibulum lacinia eros quis lobortis ultricies.
-          </p>
-          <button class="btn btn-secondary">Saiba mais</button>
-        </div>
-        
-        <div class="author-card">
-          <div class="author-info">
-            <p class="author-rating">★★★★★</p>
-            <p class="author-label">AUTORA</p>
-            <h4 class="author-name">Fulana Ciclana</h4>
-            <p class="author-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu ex, ultrices iaculis arcu at, venenatis consequat ante.</p>
+      <h2 class="section-title">Nossos Vídeos</h2>
+      <div class="carousel">
+        <div class="carousel-inner" id="carousel-inner">
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/n9qz08n_LFo?si=mgVK1WZxU5GPekqh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
-          
-          <div class="author-image">
-            <img src="assets/Autora.png" alt="Foto da autora Fulana Ciclana" class="author-img">
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/bXSsbfJOy5Q?si=ebZSh-HMx4TI4b7J" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/8Iehh7LcBuI?si=IqHTVts6OiSEgYpz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kdrdXtb_b0M?si=4pwyGTQ9hRqF-yZ_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/Rrjr4OGqT1c?si=rTCdSkcXGJ8f8EKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
         </div>
+        <div class="carousel-controls">
+          <button class="carousel-button prev" aria-label="Vídeo anterior">❮</button>
+          <button class="carousel-button next" aria-label="Próximo vídeo">❯</button>
+        </div>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
       </div>
     </div>
   </section>
 
+  <!-- Artigos -->
+  <section id="artigos" class="articles-section section">
+    <div class="container">
+      <h2 class="section-title">Nossos Artigos</h2>
+      <div class="articles-grid" id="articles-grid"></div>
+      <button class="btn btn-primary load-more" id="load-more">Carregar Mais</button>
+    </div>
+  </section>
+
   <!-- Contato -->
-<section id="contato" class="section">
-  <div class="container">
-    <h2 class="section-title">Entre em <span>Contato</span></h2>
-    
-    <form id="contact-form" class="contact-form">
-      <div class="form-row">
-        <div class="form-group">
-          <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome" required>
+  <section id="contato" class="section">
+    <div class="container">
+      <h2 class="section-title">Entre em <span>Contato</span></h2>
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Seu telefone">
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" class="form-control" placeholder="Assunto" required>
+          </div>
         </div>
         <div class="form-group">
-          <input type="email" id="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+          <textarea id="message" name="message" class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
         </div>
-      </div>
-      
-      <div class="form-row">
-        <div class="form-group">
-          <input type="tel" id="phone" name="phone" class="form-control" placeholder="Seu telefone">
-        </div>
-        <div class="form-group">
-          <input type="text" id="subject" name="subject" class="form-control" placeholder="Assunto" required>
-        </div>
-      </div>
-      
-      <div class="form-group">
-        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">
-        <span class="btn-text">Enviar Mensagem</span>
-        <span class="btn-loading" style="display:none;">
-          <span class="spinner"></span> Enviando...
-        </span>
-      </button>
-      
-      <div id="form-message" class="form-message"></div>
-    </form>
-  </div>
-</section>
+        <button type="submit" class="btn btn-primary">
+          <span class="btn-text">Enviar Mensagem</span>
+          <span class="btn-loading" style="display:none;">
+            <span class="spinner"></span> Enviando...
+          </span>
+        </button>
+        <div id="form-message" class="form-message"></div>
+      </form>
+    </div>
+  </section>
 
   <!-- Rodapé -->
   <footer class="footer">
@@ -229,7 +156,6 @@
           <h3>Projeto Foco na Mente</h3>
           <p>Promovendo saúde mental e bem-estar através de informação e acolhimento.</p>
         </div>
-        
         <div class="footer-column">
           <h3>Formulários</h3>
           <ul class="footer-links">
@@ -240,26 +166,24 @@
             <li><a href="#" class="footer-link">Voluntariado</a></li>
           </ul>
         </div>
-        
         <div class="footer-column">
           <h3>Contato</h3>
           <div class="footer-contact-item">
             <img src="assets/mail.svg" alt="Email" width="20">
-            <span>foconamente.saudemental@gmail.com</span>
+            <span><a href="mailto:projetofoconamente@gmail.com">projetofoconamente@gmail.com</a></span>
           </div>
           <div class="footer-contact-item">
             <img src="assets/instagram.svg" alt="Instagram" width="20">
-            <span>@projetofoconamente</span>
+            <span><a href="https://instagram.com/projetofoconamente">@projetofoconamente</a></span>
           </div>
           <div class="footer-contact-item">
             <img src="assets/whatsapp.svg" alt="WhatsApp" width="20">
-            <span>(12) 9999-9999</span>
+            <span><a href="tel:+551299999999">(12) 9999-9999</a></span>
           </div>
         </div>
       </div>
-      
       <div class="footer-copyright">
-        <p>&copy; 2025 Universidade de Taubaté. Todos os direitos reservados.</p>
+        <p>© 2025 Foco na Mente. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
