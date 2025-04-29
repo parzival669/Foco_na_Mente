@@ -263,7 +263,7 @@ function setupTypingEffect() {
       charIndex++;
     } else if (isTyping && charIndex === currentPhrase.length) {
       isTyping = false;
-      setTimeout(type, 1000); // Reduzido de 1500ms pra 1000ms
+      setTimeout(type, 1500); // Reduzido de 1500ms pra 1000ms
       return;
     } else if (!isTyping && charIndex > 0) {
       charIndex--;
