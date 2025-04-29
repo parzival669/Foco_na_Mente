@@ -319,12 +319,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-style: italic;
+  min-height: 4rem;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+}
+.hero-title span {
+  position: relative;
+  display: inline-block;
+  min-width: 8ch;
+  width: 12ch;
+  
+}
+
+/* .hero-title span::after {
+  content: '|';
+  position: absolute;
+  right: -12px;
+  top: -0.5rem;
+  color: black;
+  animation: blink 0.7s infinite;
+  font-family: 'Poppins', sans-serif; /* Garante que o cursor usa a mesma fonte 
+}  */
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .features {
