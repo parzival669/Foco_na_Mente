@@ -123,6 +123,58 @@ const articlesData = [
       image: 'assets/Logo.svg',
       gender: 'F'
     }
+  },
+  {
+    id: "artigo3",
+    title: "Como lidar com a ansiedade no dia a dia",
+    description: "Este artigo do Projeto Foco na Mente orienta acadêmicos da UNITAU a reconhecerem e enfrentarem a ansiedade no cotidiano, oferecendo técnicas como respiração 4-7-8, organização da rotina e prática de exercícios físicos.",
+    logo: "assets/Logo.svg",
+    pdf: "assets/articles/Texto Site FnM 05.2025-1.pdf",
+    author: {
+      name: "Pedro Medeiros Fisco",
+      bio: "Estudante de Medicina da UNITAU e integrante do subgrupo do site no Projeto Foco na Mente. Interessado em saúde mental e bem-estar emocional.",
+      image: "assets/Logo.svg",
+      gender: "M"
+    }
+  },
+  {
+    id: "artigo4",
+    title: "Música e Cérebro: A Conexão que Muda o seu Estado Emocional",
+    description: "Explora como a música afeta o cérebro, influenciando emoções, memória e bem-estar. O artigo destaca a importância da musicoterapia, especialmente em contextos como a pandemia de COVID-19.",
+    logo: "assets/Logo.svg",
+    pdf: "assets/articles/04.pdf",
+    author: {
+      name: "Giovana E. A. Jordão",
+      bio: "Membro do subgrupo site do Projeto Foco na Mente, interessada na interseção entre arte, ciência e saúde mental.",
+      image: "assets/Logo.svg",
+      gender: "F"
+    }
+  },
+  {
+    id: "artigo5",
+    title: "Saúde Mental na Universidade: Um Desafio Contemporâneo",
+    description: "Analisa os desafios emocionais enfrentados por universitários, destacando a importância do acolhimento institucional e do autocuidado para uma experiência acadêmica mais saudável.",
+    logo: "assets/Logo.svg",
+    pdf: "assets/articles/Documento (1).pdf",
+    author: {
+      name: "Letícia Curvo Bellei",
+      bio: "Integrante do subgrupo site do Projeto Foco na Mente, dedica-se à conscientização sobre saúde mental no ambiente universitário.",
+      image: "assets/Logo.svg",
+      gender: "F"
+    }
+  },
+  {
+    id: "artigo6",
+    title: "O Impacto das Redes Sociais na Saúde Mental dos Adolescentes",
+    description: "Este artigo analisa os efeitos positivos e negativos das redes sociais na saúde mental dos jovens, destacando sintomas associados ao uso excessivo e oferecendo orientações para um uso mais saudável da tecnologia.",
+    logo: "assets/Logo.svg",
+    pdf: "assets/articles/A_influência_das_mídias_e_redes_sociais_na_saúde_mental_dos_jovens.pdf",
+    author: {
+      name: "Não especificado",
+      bio: "Autor(a) integrante do Projeto Foco na Mente, voltado para temas de saúde mental e impacto das mídias digitais em jovens.",
+      image: "assets/Logo.svg",
+      gender: "N"
+    }
   }
 ];
 
