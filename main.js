@@ -170,7 +170,11 @@ const articlesData = [
     logo: "assets/Logo.svg",
     pdf: "assets/articles/A_influência_das_mídias_e_redes_sociais_na_saúde_mental_dos_jovens.pdf",
     author: {
+<<<<<<< HEAD
       name: "Não especificado",
+=======
+      name: "Fernanda Massaroti",
+>>>>>>> f5d2d4043706d7b96a1a74562087fe296f26f593
       bio: "Autor(a) integrante do Projeto Foco na Mente, voltado para temas de saúde mental e impacto das mídias digitais em jovens.",
       image: "assets/Logo.svg",
       gender: "N"
